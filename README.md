@@ -1,2 +1,8 @@
-# Cybersec-Labs-Tina-
-Portfolio de labs cybersécurité - Formation TIP / Spécialisation Pentest
+# Portfolio Cybersécurité — TIP → TSSR → Pentest
+
+Labs et write-ups réalisés dans le cadre de ma formation 
+Technicienne Informatique de Proximité (TIP) et de ma 
+spécialisation vers la cybersécurité / pentesting.
+
+## Labs réalisés
+- [Write-up EternalBlue / MS17-010](./writeup-eternalblue.md)
