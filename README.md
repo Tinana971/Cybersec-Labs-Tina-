@@ -1,7 +1,7 @@
 # Portfolio Cybersécurité — TIP → TSSR → Pentest
 
 Labs et write-ups réalisés dans le cadre de ma formation 
-Technicienne Supérieure SystèmesetRéseaux (TSSR) et de ma 
+Technicienne Supérieure Systèmes et Réseaux (TSSR) et de ma 
 spécialisation vers la cybersécurité / pentesting.
 
 ## Labs réalisés
