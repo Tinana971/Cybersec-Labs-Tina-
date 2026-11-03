@@ -10,3 +10,5 @@ spécialisation vers la cybersécurité / pentesting.
 - [Labo pentest Windows XP (Toshiba)](./pentest-toshiba-xp.md)
 
 - [Centralisation de logs avec Syslog](./centralisation-logs-syslog.md)
+
+- [Analyse authentification switch D-Link](./switch-dlink-analysis/README.md)
