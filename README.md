@@ -6,3 +6,5 @@ spécialisation vers la cybersécurité / pentesting.
 
 ## Labs réalisés
 - [Write-up EternalBlue / MS17-010](./writeup-eternalblue.md)
+
+- [Labo pentest Windows XP (Toshiba)](./pentest-toshiba-xp.md)
