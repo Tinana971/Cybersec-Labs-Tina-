@@ -12,5 +12,4 @@ spécialisation vers la cybersécurité / pentesting.
 - [Centralisation de logs avec Syslog](./centralisation-logs-syslog.md)
 
 - [Analyse authentification switch D-Link](./switch-dlink-analysis/README.md)
-- 
 - [Audit de conformité Windows 11 (CIS Benchmark, PowerShell)](audit-conformite-windows11-cis/README.md)
