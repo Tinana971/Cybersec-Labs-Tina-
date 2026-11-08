@@ -1,4 +1,4 @@
-# Portfolio Cybersécurité — TIP → TSSR → Pentest
+# Portfolio de labs cybersécurité : pentest, audit de conformité et durcissement Windows (CIS)
 
 Labs et write-ups réalisés dans le cadre de ma formation 
 Technicienne Supérieure Systèmes et Réseaux (TSSR) et de ma 
