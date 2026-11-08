@@ -1,44 +1,39 @@
- Entraînement type CTF : stéganographie, cryptographie et fondamentaux web
+Entraînement type CTF : stéganographie, cryptographie et fondamentaux web
+Contexte
 
-## Contexte
 Série d'exercices d'entraînement de type CTF (Capture The Flag), réalisés en autoformation. Ils couvrent la stéganographie, la cryptographie classique (chiffre de Vigenère) et les fondamentaux du protocole HTTP, dans l'optique de progresser vers des rooms TryHackMe réelles.
 
-## Partie 1 : stéganographie et cryptographie (4 labos progressifs)
+Partie 1 : stéganographie et cryptographie (4 labos progressifs)
+Labo 1 : extraction avec strings
+Objectif : trouver un message caché après les données d'un fichier PNG
+Outil : strings
+Résultat : message en clair extrait, clé donnée directement (CICADA)
+Labo 2 : acrostiche et analyse de texte
+Objectif : trouver la clé de déchiffrement à partir d'un indice caché dans le texte (acrostiche : première lettre de chaque ligne)
+Technique : lecture attentive, repérage d'un motif caché (clé : DARK)
+Labo 3 : chiffre de Vigenère et force brute
+Objectif : déchiffrer un message grâce à un indice thématique qui pointe vers la clé (SSH)
+Outils : CyberChef, et un script Python de force brute (casser_vigenere.py) qui utilise itertools.product et un scoring par fréquence des lettres. Le script n'est pas publié dans ce dépôt pour l'instant.
+Labo 4 : métadonnées EXIF
+Objectif : extraire un message caché dans le champ EXIF UserComment d'une image, puis casser la clé de chiffrement Vigenère sans indice fourni (clé : ROOT)
+Outils : exiftool, ghex (éditeur hexadécimal), script Python de force brute
+Partie 2 : fondamentaux HTTP et web (TryHackMe)
 
-### Labo 1 : extraction avec strings
-- Objectif : trouver un message caché après les données d'un fichier PNG
-- Outil : `strings`
-- Résultat : message en clair extrait, clé donnée directement (CICADA)
-
-### Labo 2 : acrostiche et analyse de texte
-- Objectif : trouver la clé de déchiffrement à partir d'un indice caché dans le texte (acrostiche : première lettre de chaque ligne)
-- Technique : lecture attentive, repérage d'un motif caché (clé : DARK)
-
-### Labo 3 : chiffre de Vigenère et force brute
-- Objectif : déchiffrer un message grâce à un indice thématique qui pointe vers la clé (SSH)
-- Outils : CyberChef, et un script Python de force brute (`casser_vigenere.py`) qui utilise `itertools.product` et un scoring par fréquence des lettres. Le script n'est pas publié dans ce dépôt pour l'instant.
-
-### Labo 4 : métadonnées EXIF
-- Objectif : extraire un message caché dans le champ EXIF `UserComment` d'une image, puis casser la clé de chiffrement Vigenère sans indice fourni (clé : ROOT)
-- Outils : `exiftool`, `ghex` (éditeur hexadécimal), script Python de force brute
-
-## Partie 2 : fondamentaux HTTP et web (TryHackMe)
 Révisions sous forme de quiz sur l'architecture web et le protocole HTTP :
-- rôle du serveur web et du navigateur
-- la query string (passage de données par l'URL)
-- structure d'un message HTTP (ligne de statut, en-têtes, corps)
-- le header `Host`
-- la ligne de statut dans une réponse HTTP
 
-## Notions retenues
-- Les catégories de CTF (stéganographie, crypto, forensic, web, OSINT, reverse engineering, pwn) demandent des compétences très différentes. La stéganographie et la crypto demandent de la méthode et des outils d'extraction, le web demande de comprendre le protocole HTTP.
-- Un flag CTF suit en général un format standard, par exemple `THM{cle_trouvee}` sur TryHackMe.
+rôle du serveur web et du navigateur
+la query string (passage de données par l'URL)
+structure d'un message HTTP (ligne de statut, en-têtes, corps)
+le header Host
+la ligne de statut dans une réponse HTTP
+Notions retenues
+Les catégories de CTF (stéganographie, crypto, forensic, web, OSINT, reverse engineering, pwn) demandent des compétences très différentes. La stéganographie et la crypto demandent de la méthode et des outils d'extraction, le web demande de comprendre le protocole HTTP.
+Un flag CTF suit en général un format standard, par exemple THM{cle_trouvee} sur TryHackMe.
+Limites
+Exercices d'entraînement réalisés en autoformation, pas de participation à un événement ni de défi en conditions réelles
+Pas de commandes ni de captures publiées dans ce document
+Le script de force brute n'est pas encore publié
+La partie web se limite à des quiz de révision : pas de mise en pratique sur une application web
+Outils utilisés
 
-## Limites
-- Exercices d'entraînement réalisés en autoformation, pas de participation à un événement ni de défi en conditions réelles
-- Pas de commandes ni de captures publiées dans ce document
-- Le script de force brute n'est pas encore publié
-- La partie web se limite à des quiz de révision : pas de mise en pratique sur une application web
-
-## Outils utilisés
-`strings`, `exiftool`, `ghex`, CyberChef, Python (script de force brute Vigenère), TryHackMe (rooms HTTP et Web Fundamentals).
+strings, exiftool, ghex, CyberChef, Python (script de force brute Vigenère), TryHackMe (rooms HTTP et Web Fundamentals).
