@@ -1,0 +1,38 @@
+# CTF — Stéganographie, Crypto et Web Fundamentals
+
+## Contexte
+Série d'exercices type CTF (Capture The Flag) réalisés en autoformation, couvrant la stéganographie, la cryptographie classique (chiffre de Vigenère) et les fondamentaux du protocole HTTP/web — dans l'optique de progresser vers des rooms TryHackMe réelles.
+
+## Partie 1 — Stéganographie et cryptographie (4 labos progressifs)
+
+### Labo 1 — Extraction avec strings
+Objectif : Trouver un message caché après les données d'un fichier PNG.
+Outil : strings
+Résultat : Message en clair extrait, clé donnée directement (CICADA).
+
+### Labo 2 — Acrostiche et analyse de texte
+Objectif : Trouver la clé de déchiffrement à partir d'un indice caché dans le texte (acrostiche : première lettre de chaque ligne).
+Technique : Lecture attentive, repérage de motif caché (clé : DARK).
+
+### Labo 3 — Chiffrement de Vigenère et force brute
+Objectif : Déchiffrer un message grâce à un indice thématique pointant vers la clé (SSH).
+Outils : CyberChef, script Python personnalisé (casser_vigenere.py) utilisant itertools.product et un scoring par fréquence des lettres pour la force brute.
+
+### Labo 4 — Métadonnées EXIF (autonomie complète)
+Objectif : Extraire un message caché dans le champ EXIF UserComment d'une image, puis casser la clé de chiffrement Vigenère sans indice fourni (clé : ROOT).
+Outils : exiftool, ghex (éditeur hexadécimal), script Python de force brute.
+
+## Partie 2 — Fondamentaux HTTP / Web (TryHackMe)
+Révisions sous forme de quiz sur l'architecture web et le protocole HTTP :
+- Rôle du serveur web et du navigateur
+- La query string (passage de données via l'URL)
+- Structure d'un message HTTP (ligne de statut, en-têtes, corps)
+- Le header Host
+- La ligne de statut dans une réponse HTTP
+
+## Ce que j'en retiens
+- Les catégories de CTF (stéganographie, crypto, forensic, web, OSINT, reverse engineering, pwn) couvrent des compétences très différentes — la stéganographie et la crypto demandent de la méthode et des outils d'extraction, le web demande une compréhension du protocole HTTP.
+- Un flag CTF suit généralement un format standard, par exemple THM{cle_trouvee} sur TryHackMe.
+
+## Outils utilisés
+strings, exiftool, ghex, CyberChef, Python (script de force brute Vigenère), TryHackMe (rooms HTTP/Web Fundamentals).
