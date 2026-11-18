@@ -15,4 +15,5 @@ spécialisation vers la cybersécurité / pentesting.
 - [Audit de conformité Windows 11 (CIS Benchmark, PowerShell)](audit-conformite-windows11-cis/README.md)
 - [OhSINT (TryHackMe) : OSINT](ohsint/README.md)
 
- [SBOM et détection de vulnérabilités (Syft, Trivy)](sbom-syft-trivy/README.md)
+- [SBOM et détection de vulnérabilités (Syft, Trivy)](sbom-syft-trivy/README.md)
+- [Signature de scripts PowerShell (certificat, empreinte, horodatage)](signature-scripts-powershell/README.md)
